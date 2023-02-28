@@ -1,5 +1,6 @@
 /* Header1 */
 .header1 {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -782,6 +783,12 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+/* Header */
+.header1 {
+    width: 95vw;
+}
+/* End header */
+
 /* Section2 */
 .section2 {
     margin-top: 30px;
