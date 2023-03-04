@@ -774,6 +774,7 @@ footer {
 }
 
 .item-after::after {
+    display: none;
     background-image: none;
 }
 
