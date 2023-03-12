@@ -14,8 +14,9 @@
 .header1 .mainmenu {
     box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
     border-radius: 40px;
-    height: 80px;
+    min-height: 80px;
     background-color: var(--white);
+    overflow: hidden;
 }
 
 
@@ -63,21 +64,20 @@
     cursor: pointer;
 }
 
-.header1 .mainmenu.show {
-    border-radius: 40px 40px 0 0;
-}
-
 .nav-mobile {
-    display: none;
     width: 100%;
     background-color: var(--white);
     padding: 0;
+    margin: 0;
     border-radius: 0 0 40px 40px;
+    max-height: 0;
+    transition: max-height 0.5s ease;
 }
 
 .nav-mobile.show {
     display: block;
-    transition: all 2s ease;
+    max-height: 60vh;
+    transition: max-height 0.5s ease;
 }
 
 .nav-mobile li {

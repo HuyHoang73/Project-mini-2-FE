@@ -545,19 +545,16 @@
     <script src="Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="Bootstrap/jquery.slim.min.js"></script>
     <script>
-        var listMainmenu = document.querySelector(".mainmenu");
         var listMenuMobile = document.querySelector(".nav-mobile");
         var iconMenuMobile = document.querySelector(".nav-icon");
         var iconCloseMenu = document.querySelector(".close-icon");
         iconMenuMobile.onclick = function() {
             iconMenuMobile.classList.toggle("show");
-            listMainmenu.classList.toggle("show");
             listMenuMobile.classList.toggle("show");
             iconCloseMenu.classList.toggle("show");
         }
         iconCloseMenu.onclick = function() {
             iconMenuMobile.classList.remove("show");
-            listMainmenu.classList.remove("show");
             listMenuMobile.classList.remove("show");
             iconCloseMenu.classList.remove("show");
         }
